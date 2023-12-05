@@ -1,0 +1,84 @@
+body,
+html {
+    height: 100%;
+}
+
+.row {
+    height: 100%;
+}
+
+.bg-dark {}
+
+h1 {
+    margin: 0;
+}
+
+.education-content {
+    padding: 10%;
+    padding-top: 10%;
+    padding-bottom: 20%;
+}
+
+.heading {
+    margin: 0;
+    font-family: 'Cookie', cursive;
+    font-size: 6rem;
+    background-color: #427D9D !important;
+    text-align: center;
+    margin-top: 100%;
+}
+
+.education-parent {
+    background-color: #427D9D !important;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.row {
+    height: 100%;
+}
+
+.bg-dark {}
+
+h1 {
+    margin: 0;
+    transition: font-size 0.3s, padding 0.3s;
+}
+
+.education-content {
+    padding: 10%;
+    padding-top: 10%;
+    padding-bottom: 20%;
+}
+
+.heading {
+    margin: 0;
+    font-family: 'Cookie', cursive;
+    font-size: 6rem;
+    background-color: #427D9D !important;
+    text-align: center;
+    margin-top: 100%;
+}
+
+.education-parent {
+    background-color: #427D9D !important;
+}
+
+
+.fixed-header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 2% 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-header .heading {
+    font-size: 3rem;
+    padding: 2% 0;
+}
+

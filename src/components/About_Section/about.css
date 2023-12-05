@@ -1,0 +1,38 @@
+body,
+html {
+    height: 100%;
+}
+
+.row {
+    height: 100%;
+}
+
+.bg-dark {}
+
+h1 {
+    margin: 0;
+}
+
+.about-content{
+    padding: 10%;
+}
+
+.heading {
+    margin: 0;
+    font-family: 'Cookie', cursive;
+    font-size: 6rem;
+    background-color: #427D9D !important;
+    text-align: center;
+    margin-top: 100%;
+}
+
+@media (max-width: 768px) {
+    .heading {
+        margin-top: 0% !important;
+    }
+}
+
+.about-parent {
+    background-color: #427D9D !important;
+}
+
