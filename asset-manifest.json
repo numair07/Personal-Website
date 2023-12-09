@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/Personal-Website/static/css/main.d5db5702.css",
-    "main.js": "/Personal-Website/static/js/main.173f5061.js",
+    "main.css": "/Personal-Website/static/css/main.c130f1d2.css",
+    "main.js": "/Personal-Website/static/js/main.6676d8ea.js",
+    "static/media/Resume_Numair.pdf": "/Personal-Website/static/media/Resume_Numair.421d6ecbfee48366f7a6.pdf",
+    "static/media/Photo_Numair.jpg": "/Personal-Website/static/media/Photo_Numair.4d164444005cf9b07542.jpg",
     "index.html": "/Personal-Website/index.html",
-    "main.d5db5702.css.map": "/Personal-Website/static/css/main.d5db5702.css.map",
-    "main.173f5061.js.map": "/Personal-Website/static/js/main.173f5061.js.map"
+    "main.c130f1d2.css.map": "/Personal-Website/static/css/main.c130f1d2.css.map",
+    "main.6676d8ea.js.map": "/Personal-Website/static/js/main.6676d8ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5db5702.css",
-    "static/js/main.173f5061.js"
+    "static/css/main.c130f1d2.css",
+    "static/js/main.6676d8ea.js"
   ]
 }
