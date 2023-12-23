@@ -8,7 +8,7 @@ const WorkExperienceTimeline = () => {
         <div className="container-fluid" id="work-experience">
             <div className="row">
                 <div className="col-md-3 bg-dark text-white education-parent">
-                    <div className="sticky-top heading-container">
+                    <div className="sticky-top heading-container" style={{paddingTop: '0.5%'}}>
                         <h1 className="py-3 heading">Work Experience</h1>
                     </div>
                 </div>

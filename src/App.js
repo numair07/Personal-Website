@@ -6,6 +6,7 @@ import WorkExperienceTimeline from './components/Work_Ex/WorkEx';
 
 import profilePicture from './Assets/Photo_Numair.jpg';
 import Resume from "./Assets/Resume_Numair.pdf";
+import Research from './components/Research/research';
 
 
 const App = () => {
@@ -22,11 +23,11 @@ const App = () => {
     <div>
       <NavBar />
       <section class="landing">
-      <div className="row justify-content-center align-items-center" style={{ paddingTop: '2%' }}>
-        <div className="col-lg-12 text-center">
-          <img src={profilePicture} alt="Profile" style={imageStyle} />
+        <div className="row justify-content-center align-items-center" style={{ paddingTop: '5%' }}>
+          <div className="col-lg-12 text-center">
+            <img src={profilePicture} alt="Profile" style={imageStyle} />
+          </div>
         </div>
-      </div>
         <div class="row">
           <div class="col-lg-12">
             <p id="nameTest">Numair Shaikh</p>
@@ -46,13 +47,13 @@ const App = () => {
                 <a href="https://in.linkedin.com/in/numair-shaikh/"><i class="fa fa-linkedin-square social_media_buttons"></i></a>
               </div>
             </div>
-            <div className="row justify-content-center">
-            <div className="col-md-6">
-              <div className="text-center">
-                <a href={Resume} download="Resume_Numair.pdf" className="resume-download-button">Download Resume</a>
+            <div className="row justify-content-center" style={{ marginTop: '-1%' }}>
+              <div className="col-md-6">
+                <div className="text-center">
+                  <a href={Resume} download="Resume_Numair.pdf" className="resume-download-button">Download Resume</a>
+                </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </section>
@@ -61,6 +62,8 @@ const App = () => {
       <Education />
       <div style={{ width: '100%', height: '0.1rem', backgroundColor: '#072541' }}></div>
       <WorkExperienceTimeline />
+      <div style={{ width: '100%', height: '0.1rem', backgroundColor: '#072541' }}></div>
+      <Research />
     </div>
   );
 }
