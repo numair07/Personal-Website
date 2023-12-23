@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NavBar from './components/navigation';
 import About from './components/About_Section/about';
 import Education from './components/Education/education';
@@ -8,8 +8,23 @@ import profilePicture from './Assets/Photo_Numair.jpg';
 import Resume from "./Assets/Resume_Numair.pdf";
 import Research from './components/Research/research';
 
+import { Modal, Popover } from 'antd';
+
 
 const App = () => {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true)
+  }
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
 
   const imageStyle = {
     width: '225px', // Adjust the width as needed
@@ -18,8 +33,13 @@ const App = () => {
     objectFit: 'cover', // Maintain the aspect ratio of the image
   };
 
-  return (
+  const content = (
+    <div>
+      <p>Display Resume In Browser</p>
+    </div>
+  );
 
+  return (
     <div>
       <NavBar />
       <section class="landing">
@@ -45,6 +65,18 @@ const App = () => {
                 <a href="https://github.com/numair07"><i class="fa fa-github social_media_buttons"></i></a>
                 <a href="mailto:numairsh77@gmail.com"><i class="fa fa-envelope-o social_media_buttons"></i></a>
                 <a href="https://in.linkedin.com/in/numair-shaikh/"><i class="fa fa-linkedin-square social_media_buttons"></i></a>
+                <Popover content={content} title="Display Resume">
+                  <a onClick={showModal}><i class="fa fa-file-text social_media_buttons"></i></a>
+                </Popover>
+                <Modal title="PDF Viewer" centered open={isModalOpen} onOk={handleOk} onCancel={handleCancel} width={'90%'}>
+                  <iframe
+                    src={Resume}
+                    width="100%"
+                    height="500px"
+                    title="PDF Viewer"
+                    style={{ border: 'none' }}
+                  />
+                </Modal>
               </div>
             </div>
             <div className="row justify-content-center" style={{ marginTop: '-1%' }}>

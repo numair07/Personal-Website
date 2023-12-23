@@ -9,7 +9,7 @@ import sparqlpaper from "../../Assets/PreProduction-KGandSPARQL.pdf";
 import sparqlpaper_decision from "../../Assets/Decision_Letter_Springer.pdf";
 import querypaper_presentation from "../../Assets/Paper_Presenter_Certificate.pdf";
 import querypaper_attendance from "../../Assets/Conference_Participation_Certificate.pdf";
-
+import fakenews_paper from "../../Assets/ESCI-Fake_News.pdf";
 
 const Research = () => {
 
@@ -18,6 +18,7 @@ const Research = () => {
     const [isModalOpenQueryPaper, setIsModalOpenQueryPaper] = useState(false);
     const [isModalOpenQueryDecision, setIsModalOpenQueryDecision] = useState(false);
     const [isModalOpenICON, setIsModalOpenICON] = useState(false);
+    const [isModalOpenFakeNewsPaper, setIsModalOpenFakeNewsPaper] = useState(false);
 
     const showModalSparqlPaper = () => {
         setIsModalOpenSparqlPaper(true)
@@ -34,6 +35,9 @@ const Research = () => {
     const showModalICON = () => {
         setIsModalOpenICON(true);
     }
+    const showModalFakeNewsPaper = () => {
+        setIsModalOpenFakeNewsPaper(true);
+    }
 
     const handleOk = () => {
         setIsModalOpenSparqlPaper(false);
@@ -41,6 +45,7 @@ const Research = () => {
         setIsModalOpenQueryPaper(false);
         setIsModalOpenQueryDecision(false);
         setIsModalOpenICON(false);
+        setIsModalOpenFakeNewsPaper(false);
     };
 
     const handleCancel = () => {
@@ -49,13 +54,14 @@ const Research = () => {
         setIsModalOpenQueryPaper(false);
         setIsModalOpenQueryDecision(false);
         setIsModalOpenICON(false);
+        setIsModalOpenFakeNewsPaper(false);
     };
 
     return (
         <div className="container-fluid" id="research">
             <div className="row">
                 <div className="col-md-3 bg-dark text-white education-parent">
-                    {isModalOpenSparqlPaper || isModalOpenSparqlDecision || isModalOpenQueryPaper || isModalOpenQueryDecision || isModalOpenICON ? <><div className="heading-container" style={{ paddingTop: '0.5%' }}>
+                    {isModalOpenSparqlPaper || isModalOpenSparqlDecision || isModalOpenQueryPaper || isModalOpenQueryDecision || isModalOpenICON || isModalOpenFakeNewsPaper ? <><div className="heading-container" style={{ paddingTop: '0.5%' }}>
                         <h1 className="py-3 heading">Research</h1>
                     </div></> : <> <div className="sticky-top heading-container" style={{ paddingTop: '0.5%' }}>
                         <h1 className="py-3 heading">Research</h1>
@@ -130,6 +136,25 @@ const Research = () => {
                         <Modal title="PDF Viewer" centered open={isModalOpenICON} onOk={handleOk} onCancel={handleCancel} width={'90%'}>
                             <iframe
                                 src={querypaper_attendance}
+                                width="100%"
+                                height="500px"
+                                title="PDF Viewer"
+                                style={{ border: 'none' }}
+                            />
+                        </Modal>
+                    </Card>
+                    <Card title="Unmasking Disinformation: Detection of Fake News Online using Learning Techniques" bordered={false} style={{ width: '100%', marginTop: '2%' }}>
+                        <p><b>Full Title - </b> Unmasking Disinformation: Detection of Fake News Online using Learning Techniques</p>
+                        <i>Numair Shaikh, Pallavi Petkar & Sheetal Sonawane</i>
+                        <p>Department of Computer Engineering, SCTR's Pune Institute of Computer Technology</p>
+                        <p>Submitted to the <a href="https://esciioit.org/">International Conference on Emerging Smart Computing & Informatics 2024</a> , <b>Awaiting Decision</b></p>
+                        <p>Examined various machine learning and deep learning models utilized for the purpose of fake news detection from Kaggle Fake-News dataset. Observed that DiltilBERT, emerged as the best performer for the identification of fake news, achieving a remarkable 99.23% accuracy on testing data.</p>
+                        <Button type="primary" className="pdfbuttons" onClick={showModalFakeNewsPaper}>
+                            Full Paper PDF
+                        </Button>
+                        <Modal title="PDF Viewer" centered open={isModalOpenFakeNewsPaper} onOk={handleOk} onCancel={handleCancel} width={'90%'}>
+                            <iframe
+                                src={fakenews_paper}
                                 width="100%"
                                 height="500px"
                                 title="PDF Viewer"
