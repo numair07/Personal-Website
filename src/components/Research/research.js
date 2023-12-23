@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import { Card } from 'antd';
 import { Modal, Button } from 'antd';
 
-import querypaper from "../../Assets/Camera Ready Copy - Query-Based Summarization and Sentiment Analysis for Indian Financial Text by leveraging Dense Passage Retriever, RoBERTa, and FinBERT.pdf";
-import sparqlpaper from "../../Assets/SPRINGER___Generating_Knowledge_Graphs_for_Explainable_Artificial_Intelligence_and_Querying_them_by_Translating_NLQ_to_SPARQL (1).pdf";
+import "./research.css"
+
+import querypaper from "../../Assets/CRC-Query_Based_Summarization.pdf";
+import sparqlpaper from "../../Assets/PreProduction-KGandSPARQL.pdf";
 import sparqlpaper_decision from "../../Assets/Decision_Letter_Springer.pdf";
-import querypaper_presentation from "../../Assets/Paper Presenter Certificate - Numair Shahid Jamal Shaikh .pdf";
-import querypaper_attendance from "../../Assets/Conference Participation Certificate - Numair Shahid Jamal Shaikh .pdf";
+import querypaper_presentation from "../../Assets/Paper_Presenter_Certificate.pdf";
+import querypaper_attendance from "../../Assets/Conference_Participation_Certificate.pdf";
 
 
 const Research = () => {
@@ -123,7 +125,7 @@ const Research = () => {
                             />
                         </Modal>
                         <Button type="primary" className="pdfbuttons" onClick={showModalICON}>
-                            Show ICON Participation Certificate
+                            ICON Participation Certificate
                         </Button>
                         <Modal title="PDF Viewer" centered open={isModalOpenICON} onOk={handleOk} onCancel={handleCancel} width={'90%'}>
                             <iframe
