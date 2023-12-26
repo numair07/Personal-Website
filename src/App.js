@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import NavBar from './components/navigation';
 import About from './components/About_Section/about';
 import Education from './components/Education/education';
@@ -43,12 +43,23 @@ const App = () => {
     </div>
   );
 
+  const componentRef = useRef(null);
+
+  const scrollToComponent = () => {
+    if (componentRef.current) {
+      componentRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <>
       <Routes>
         <Route path="/" element={
           <div>
-            <NavBar />
+            {/* <NavBar scrollToComponent = { scrollToComponent } /> */}
             <section class="landing">
               <div className="row justify-content-center align-items-center" style={{ paddingTop: '5%' }}>
                 <div className="col-lg-12 text-center">

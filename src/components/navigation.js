@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NavBar = () => {
+const NavBar = ({ scrollToComponent }) => {
 
     return (
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -11,7 +11,7 @@ const NavBar = () => {
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#" onClick={scrollToComponent}>About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#education">Education</a>
