@@ -13,7 +13,7 @@ import sparqlpaper from "./Assets/PreProduction-KGandSPARQL.pdf";
 import fakenews_paper from "./Assets/ESCI-Fake_News.pdf";
 
 import { Modal, Popover } from 'antd';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
 
@@ -44,9 +44,9 @@ const App = () => {
   );
 
   return (
-    <BrowserRouter>
+    <>
       <Routes>
-        <Route path="/Personal-Website/" element={
+        <Route path="/" element={
           <div>
             <NavBar />
             <section class="landing">
@@ -106,16 +106,16 @@ const App = () => {
           </div>
         }>
         </Route>
-        <Route path="/Personal-Website/PaperOne-ICON_ACL" element={
+        <Route path="/PaperOne-ICON_ACL" element={
           <iframe
               src={querypaper}
               width="100%"
-              height="500px"
+              height="800px"
               title="PDF Viewer"
               style={{ border: 'none' }}
             />
         }></Route>
-        <Route path="/Personal-Website/PaperTwo-Springer" element={
+        <Route path="/PaperTwo-Springer" element={
           <iframe
               src={sparqlpaper}
               width="100%"
@@ -124,7 +124,7 @@ const App = () => {
               style={{ border: 'none' }}
             />
         }></Route>
-        <Route path="/Personal-Website/PaperThree-IEEE" element={
+        <Route path="/PaperThree-IEEE" element={
           <iframe
               src={fakenews_paper}
               width="100%"
@@ -134,7 +134,7 @@ const App = () => {
             />
         }></Route>
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 
