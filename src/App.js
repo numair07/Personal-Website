@@ -5,7 +5,7 @@ import Education from './components/Education/education';
 import WorkExperienceTimeline from './components/Work_Ex/WorkEx';
 
 import profilePicture from './Assets/Photo_Numair.jpg';
-import Resume from "./Assets/Resume_Numair.pdf";
+import Resume from "./Assets/Resume_Numair_Academic.pdf";
 import Research from './components/Research/research';
 
 import querypaper from "./Assets/CRC-Query_Based_Summarization.pdf";
@@ -100,7 +100,7 @@ const App = () => {
                   <div className="row justify-content-center" style={{ marginTop: '-1%' }}>
                     <div className="col-md-6">
                       <div className="text-center">
-                        <a href={Resume} download="Resume_Numair.pdf" className="resume-download-button">Download Resume</a>
+                        <a href={Resume} download="Resume_Numair_Academic.pdf" className="resume-download-button">Download Resume</a>
                       </div>
                     </div>
                   </div>
