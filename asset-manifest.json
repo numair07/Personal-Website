@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/personal_website/static/css/main.406af352.css",
-    "main.js": "/personal_website/static/js/main.f9b4f69d.js",
+    "main.js": "/personal_website/static/js/main.bcf427ab.js",
     "static/media/ESCI-Fake_News_Acceptance_Mail.pdf": "/personal_website/static/media/ESCI-Fake_News_Acceptance_Mail.f7dd98b908e717a9fb9f.pdf",
     "static/media/PreProduction-KGandSPARQL.pdf": "/personal_website/static/media/PreProduction-KGandSPARQL.eb82e4311f9652688b33.pdf",
     "static/media/CRC-Query_Based_Summarization.pdf": "/personal_website/static/media/CRC-Query_Based_Summarization.5b0a8972cf0a322d6e4b.pdf",
     "static/media/Decision_Letter_Springer.pdf": "/personal_website/static/media/Decision_Letter_Springer.131a7893a9a43eba7c23.pdf",
-    "static/media/ESCI-Fake_News.pdf": "/personal_website/static/media/ESCI-Fake_News.60bc5ecc3f5c61cd826e.pdf",
+    "static/media/ESCI-Fake_News.pdf": "/personal_website/static/media/ESCI-Fake_News.6b09a77fb8c1bd25e769.pdf",
     "static/media/Conference_Participation_Certificate.pdf": "/personal_website/static/media/Conference_Participation_Certificate.d54b4b122ab552d9a087.pdf",
     "static/media/Paper_Presenter_Certificate.pdf": "/personal_website/static/media/Paper_Presenter_Certificate.72db97864a04022f1c4d.pdf",
-    "static/media/Resume_Numair_Academic.pdf": "/personal_website/static/media/Resume_Numair_Academic.67335b52028a45fcada1.pdf",
+    "static/media/Resume_Numair_Academic.pdf": "/personal_website/static/media/Resume_Numair_Academic.1ed8aa7eb62b010ba28c.pdf",
     "static/media/Photo_Numair.jpg": "/personal_website/static/media/Photo_Numair.4d164444005cf9b07542.jpg",
     "index.html": "/personal_website/index.html",
     "main.406af352.css.map": "/personal_website/static/css/main.406af352.css.map",
-    "main.f9b4f69d.js.map": "/personal_website/static/js/main.f9b4f69d.js.map"
+    "main.bcf427ab.js.map": "/personal_website/static/js/main.bcf427ab.js.map"
   },
   "entrypoints": [
     "static/css/main.406af352.css",
-    "static/js/main.f9b4f69d.js"
+    "static/js/main.bcf427ab.js"
   ]
 }
