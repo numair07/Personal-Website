@@ -154,7 +154,7 @@ const Research = () => {
                         <p><b>Full Title - </b> Unmasking Disinformation: Detection of Fake News Online using Learning Techniques</p>
                         <i>Numair Shaikh, Pallavi Petkar & Sheetal Sonawane</i>
                         <p>Department of Computer Engineering, SCTR's Pune Institute of Computer Technology</p>
-                        <p>Accepted for presentation/publication at the <a href="https://esciioit.org/">International Conference on Emerging Smart Computing & Informatics 2024</a></p>
+                        <p>Accepted for presentation/publication at the <a href="https://esciioit.org/">6th IEEE International Conference on Emerging Smart Computing  Informatics (ESCI, 2024)</a></p>
                         <p>Examined various machine learning and deep learning models utilized for the purpose of fake news detection from Kaggle Fake-News dataset. Observed that DiltilBERT, emerged as the best performer for the identification of fake news, achieving a remarkable 99.23% accuracy on testing data.</p>
                         <Button type="primary" className="pdfbuttons" onClick={showModalFakeNewsPaper}>
                             Full Paper PDF
