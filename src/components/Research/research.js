@@ -79,7 +79,9 @@ const Research = () => {
                         <p><b>Full Title - </b> Generating Knowledge Graphs for Explainable Artificial Intelligence and Querying them by Translating Natural Language Queries to SPARQL</p>
                         <i>Numair Shaikh, Tavishee Chavan, Jayesh Patil & Sheetal Sonawane</i>
                         <p>Department of Computer Engineering, SCTR's Pune Institute of Computer Technology</p>
-                        <p>Accepted for publication in the <a href="https://www.springer.com/journal/41870">International Journal of Information Technology (IJIT) - Springer </a></p>
+                        <p>Published in the <a href="https://www.springer.com/journal/41870">International Journal of Information Technology (IJIT) - Springer </a></p>
+                        <p>Publication Date: 21/01/2024</p>
+                        <p>DOI: <a href="https://doi.org/10.1007/s41870-023-01692-y">10.1007/s41870-023-01692-y</a></p>
                         <p>In this research work, a comprehensive workflow is presented for the generation of Knowledge Graphs for Explainable AI, along with a system to translate natural language input to SPARQL queries for easy search and retrieval.</p>
                         <Button type="primary" className="pdfbuttons" onClick={showModalSparqlPaper}>
                             Full Paper PDF
@@ -93,9 +95,9 @@ const Research = () => {
                                 style={{ border: 'none' }}
                             />
                         </Modal>
-                        <Button type="primary" className="pdfbuttons" onClick={showModalSparqlDecision}>
+                        {/* <Button type="primary" className="pdfbuttons" onClick={showModalSparqlDecision}>
                             Springer - IJIT Decision
-                        </Button>
+                        </Button> */}
                         <Modal title="PDF Viewer" centered open={isModalOpenSparqlDecision} onOk={handleOk} onCancel={handleCancel} width={'90%'}>
                             <iframe
                                 src={sparqlpaper_decision}
