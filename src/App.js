@@ -9,11 +9,12 @@ import Resume from "./Assets/Resume_Numair_Academic.pdf";
 import Research from './components/Research/research';
 
 import querypaper from "./Assets/CRC-Query_Based_Summarization.pdf";
-import sparqlpaper from "./Assets/PreProduction-KGandSPARQL.pdf";
+import sparqlpaper from "./Assets/IJIT_Final_Version.pdf";
 import fakenews_paper from "./Assets/ESCI-Fake_News.pdf";
 
 import { Modal, Popover } from 'antd';
 import { Routes, Route } from "react-router-dom";
+import RedirectPaperTwoSpringer from './components/RedirectPaperTwoSpringer';
 
 const App = () => {
 
@@ -126,7 +127,7 @@ const App = () => {
               style={{ border: 'none' }}
             />
         }></Route>
-        <Route path="/PaperTwo-Springer" element={
+        {/* <Route path="/PaperTwo-Springer" element={
           <iframe
               src={sparqlpaper}
               width="100%"
@@ -134,7 +135,8 @@ const App = () => {
               title="PDF Viewer"
               style={{ border: 'none' }}
             />
-        }></Route>
+        }></Route> */}
+        <Route path="/PaperTwo-Springer" element={<RedirectPaperTwoSpringer />} />
         <Route path="/PaperThree-IEEE" element={
           <iframe
               src={fakenews_paper}

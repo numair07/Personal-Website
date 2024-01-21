@@ -5,7 +5,7 @@ import { Modal, Button } from 'antd';
 import "./research.css"
 
 import querypaper from "../../Assets/CRC-Query_Based_Summarization.pdf";
-import sparqlpaper from "../../Assets/PreProduction-KGandSPARQL.pdf";
+import sparqlpaper from "../../Assets/IJIT_Final_Version.pdf";
 import sparqlpaper_decision from "../../Assets/Decision_Letter_Springer.pdf";
 import querypaper_presentation from "../../Assets/Paper_Presenter_Certificate.pdf";
 import querypaper_attendance from "../../Assets/Conference_Participation_Certificate.pdf";
