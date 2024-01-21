@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal_website/static/css/main.406af352.css",
-    "main.js": "/personal_website/static/js/main.dd5a6aa7.js",
+    "main.js": "/personal_website/static/js/main.78811c5f.js",
     "static/media/IJIT_Final_Version.pdf": "/personal_website/static/media/IJIT_Final_Version.0be0849f6f384f7ed349.pdf",
     "static/media/ESCI-Fake_News_Acceptance_Mail.pdf": "/personal_website/static/media/ESCI-Fake_News_Acceptance_Mail.f7dd98b908e717a9fb9f.pdf",
     "static/media/CRC-Query_Based_Summarization.pdf": "/personal_website/static/media/CRC-Query_Based_Summarization.5b0a8972cf0a322d6e4b.pdf",
@@ -13,10 +13,10 @@
     "static/media/Photo_Numair.jpg": "/personal_website/static/media/Photo_Numair.4d164444005cf9b07542.jpg",
     "index.html": "/personal_website/index.html",
     "main.406af352.css.map": "/personal_website/static/css/main.406af352.css.map",
-    "main.dd5a6aa7.js.map": "/personal_website/static/js/main.dd5a6aa7.js.map"
+    "main.78811c5f.js.map": "/personal_website/static/js/main.78811c5f.js.map"
   },
   "entrypoints": [
     "static/css/main.406af352.css",
-    "static/js/main.dd5a6aa7.js"
+    "static/js/main.78811c5f.js"
   ]
 }
